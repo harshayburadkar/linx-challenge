@@ -189,7 +189,7 @@ test.serial.cb('test route with multiple match', function (t) {
           const item = targets.find(t => t.id === highValueId)
           const expected = copySample.maxAcceptsPerDay - 1
           const actual = item.maxAcceptsPerDay
-          t.deepEqual(actual, expected, 'accepts should reduce by one')
+          t.deepEqual(actual, expected.toString(), 'accepts should reduce by one')
           t.end()
         })
       })
